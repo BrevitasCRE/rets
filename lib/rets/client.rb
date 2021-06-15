@@ -252,7 +252,7 @@ module Rets
       }
 
       extra_headers = {
-        "Accept" => "image/jpeg, image/png;q=0.5, image/gif;q=0.1",
+        "Accept" => "image/jpeg, image/png;q=0.5, image/gif;q=0.1, application/pdf",
       }
 
       http_post(capability_url("GetObject"), params, extra_headers)
