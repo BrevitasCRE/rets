@@ -327,6 +327,7 @@ module Rets
 
     def extract_capabilities(document)
       raw_key_values = document.xpath("/RETS/RETS-RESPONSE").text.strip
+      raw_key_values = document.xpath("/RETS").text.strip if raw_key_values.blank?
 
       # ... :(
       # Feel free to make this better. It has a test.
